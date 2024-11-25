@@ -40,7 +40,9 @@ for ieraksts in cursor:
     print("NOSAUKUMS= ", ieraksts[1])
     print("GADS= ", ieraksts[2],"\n")
 
+cursor.execute('''SELECT NOSAUKUMS,GADS FROM GRAMATAS ORDER BY GADS''')
+for ieraksts in cursor.fetchall():
+    print(ieraksts)
 
 conn.commit()
-
 conn.close()
