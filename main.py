@@ -43,4 +43,4 @@ for ieraksts in cursor:
 
 print('Dati ir veiksmigi dzesti')
 #print('Ieraksti ir izveidoti')
-conn.close
+conn.close()
